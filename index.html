@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>PROYECTOS DE TÍTULO</title>
         <style>
-            *,
+           *,
 *::before,
 *::after {
     box-sizing: border-box;
@@ -16,11 +16,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
 :root {
-    --color-oscurisimo: #221157;
-    --color-oscuro: #1F1D8A;
-    --color-normal: #2840A8;
-    --color-iluminado: #3681C2;
-    --color-iluminadisimo: #42AAD6;
+    --color-oscurisimo: #000;
+    --color-oscuro: #444;
+    --color-normal: #999;
+    --color-iluminado: #aaa;
+    --color-iluminadisimo: #ddd;
     --fuente: "Source Code Pro", monospace;
 }
 
@@ -131,7 +131,7 @@ td:nth-child(3) {
     <body>
         <div id="contenedor">
             <h1>₍^. .^₎⟆</h1>
-            <h2>PROYECTOS DE TÍTULO</h2>
+            <h2>ELECTIVOS DE DISEÑO</h2>
 
             <input type="text" id="elInput" placeholder="Filtrar electivos…" />
             <div id="contenedordetabla">
@@ -139,19 +139,16 @@ td:nth-child(3) {
                     <thead>
                         <tr>
                             <th>N°</th>
-                            <th>Titulad@</th>
-                            <th>Proyecto</th>
-                            <th>Nota</th>
-                            <th>Categoría</th>
-                            <th>Prof. Guía</th>
+                            <th>Asignatura electiva</th>
+                            <th>Mención</th>
+                            <th>Grupo</th>
+                            <th>Enfoque</th>
                         </tr>
                     </thead>
                     <tbody id="este"></tbody>
                 </table>
             </div>
             <small>Diseño y visualización de información</small>
-        </div>
-
         <script>
             const t = document.querySelector("#este");
             const URL = "https://api.myjson.online/v1/records/8ca7ea9c-abf2-44a5-81fe-d43df3f1ad5a";
