@@ -153,7 +153,7 @@ td:nth-child(3) {
             <small>Diseño y visualización de información</small>
         <script>
             const t = document.querySelector("#este");
-            const URL = "https://api.myjson.online/v1/records/01edc4c3-8079-41b0-8fd7-afc638ce8941";
+            const URL = "https://api.myjson.online/v1/records/74e71d13-23a9-4a6a-b6bf-f50dd4595da7";
 
             fetch(URL)
                 .then((respuesta) => {
@@ -166,7 +166,7 @@ td:nth-child(3) {
                     var trabajo = datos.data;
                     console.log(trabajo);
                     trabajo.forEach((x) => {
-                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.N°}</td><td>${x.Nombre}</td><td>${x.Proyecto}</td><td>${x.Nota}</td><td>${x.Categoría}</td><td>${x.Prof. Guía}</td><td>${x.Repositorio}</td></tr>`;
+                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.number}</td><td>${x.name}</td><td>${x.title}</td><td>${x.grade}</td><td>${x.category}</td><td>${x.tutor}</td><td>${x.repository}</td></tr>`;
                     });
                 })
                 .catch((error) => {
